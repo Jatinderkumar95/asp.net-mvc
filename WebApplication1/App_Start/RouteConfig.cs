@@ -11,6 +11,10 @@ namespace WebApplication1
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            // URl - appbasepath/trace.axd
+            // axd is file extension for trace file.
+            // <trace enabled="true" pageOutput="false"/>
+            // this enables mapping of axd file.
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
