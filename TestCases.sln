@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageEmployee.Web", "WebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageEmployee.Domain", "ManageEmployee.Domain\ManageEmployee.Domain.csproj", "{44562A02-F6A5-4750-9C15-735D66F395EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageEmployee.BAL", "ManageEmployee.BAL\ManageEmployee.BAL.csproj", "{713AD402-87F5-4647-AE5A-1FF37BCF8256}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{44562A02-F6A5-4750-9C15-735D66F395EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44562A02-F6A5-4750-9C15-735D66F395EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44562A02-F6A5-4750-9C15-735D66F395EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713AD402-87F5-4647-AE5A-1FF37BCF8256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713AD402-87F5-4647-AE5A-1FF37BCF8256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713AD402-87F5-4647-AE5A-1FF37BCF8256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713AD402-87F5-4647-AE5A-1FF37BCF8256}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
