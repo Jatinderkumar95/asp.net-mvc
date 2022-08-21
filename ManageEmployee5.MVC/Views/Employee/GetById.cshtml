@@ -1,11 +1,22 @@
 ﻿@model ManageEmployee5.MVC.Models.Employee
 @{
-  ViewBag.Title = "GetById";
+  ViewBag.Title = Model.Name + " employee details";
   Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>GetById</h2>
+<div style="font-family:Arial;">
+  <table>
+    <tr>
+      <th>
 
-<div style="text-align:left; height:30px;padding:10px;">
+      </th>
+    </tr>
+    
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+  <div style="text-align:left; height:30px;padding:10px;">
     <span>@Html.ActionLink("Back to list", "Index")</span>
   </div>
+</div>

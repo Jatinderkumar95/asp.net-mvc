@@ -1,28 +1,27 @@
-﻿@model System.Collections.Generic.List<ManageEmployee5.MVC.Models.Employee>
+﻿@model IEnumerable<ManageEmployee5.MVC.Models.Employee>
 @{
   ViewBag.Title = "Employee list";
   Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div style="text-align:left; height:30px;padding:10px;">
-  <span>@Html.ActionLink("Create New", "Create")</span>
+  <p>@Html.ActionLink("Create New", "Create")</p>
 </div>
 <table style="border-spacing:0;width:400px;text-align:center;font-family:Algerian;">
   <tr>
-    <td>Id</td>
-    <td>Name</td>
+    <th>@Html.DisplayNameFor(model => model.Id)</th>
+    <th>@Html.DisplayNameFor(model => model.Name)</th>
   </tr>
   @foreach (var employee in Model)
   {
     <tr>
-      <td>@employee.Id</td>
+      <td>@Html.DisplayFor(modelItem => employee.Id)</td>
       <td>@Html.ActionLink(employee.Name, "GetById", new { Id = employee.Id })</td>
-      <td>@Html.ActionLink("Edit", "Edit", new { Id = employee.Id })</td>
-      <td>@Html.ActionLink("Delete", "Delete", new { Id = employee.Id })</td>
+      <td>@Html.ActionLink("Detail", "Detail", new { Id = employee.Id })| @Html.ActionLink("Edit", "Edit", new { Id = employee.Id })| @Html.ActionLink("Delete", "Delete", new { Id = employee.Id })</td>
     </tr>
   }
 </table>
 
 @section Scripts{
   <script src="~/wwwroot/js/CustomScript.js"></script>
-  }
+}
 

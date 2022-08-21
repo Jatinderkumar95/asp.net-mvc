@@ -41,5 +41,15 @@ namespace ManageEmployee5.MVC.Controllers
         {
             return View(Employees.First(a => a.Id == Convert.ToInt32(id)));
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        //[HttpPost]
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
     }
 }
