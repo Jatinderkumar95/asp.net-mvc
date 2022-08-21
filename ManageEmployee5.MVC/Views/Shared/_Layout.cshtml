@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  @* Title is being fetched from view*@
+  <title>@ViewBag.Title</title>
+  @* Common Javascript & CSS are referenced here.*@
+</head>
+<body>
+  <div>
+    <table border="1" style="font-family: Arial; width: 600px; border-spacing: 0;">
+      <tr>
+        <td style="text-align:center;" colspan=2><h3>Employee Portal</h3></td>
+      </tr>
+
+      <tr style="text-align:center;">
+        @* html helper  - actionlink*@
+        <td style="width:200px;">
+          <ul>
+            <li>@Html.ActionLink("Employee", "Index", "Employee")</li>
+            <li>@Html.ActionLink("Manager", "Index", "Manager")</li>
+            <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
+          </ul>
+        </td>
+        <td style="width:400px;">@RenderBody()</td>
+      </tr>
+      <tr>
+        <td style="text-align:center;" colspan=2><h4>Copyright 2022</h4></td>
+      </tr>
+    </table>
+  </div>
+ @if (IsSectionDefined("Scripts"))
+ {
+   @RenderSection("Scripts");
+ }
+</body>
+</html>
